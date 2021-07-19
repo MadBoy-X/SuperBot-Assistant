@@ -1,11 +1,12 @@
 from telethon import TelegramClient
 import os
 
+from sample_config import Config
 
 owner = os.environ.get("OWNER_ID", 1732236209)
-token = os.environ.get("TOKEN")
-api_id = os.environ.get("API_ID")
-api_hash = os.environ.get("API_HASH")
+token = Config.TOKEN
+api_id = Config.API_ID
+api_hash = Config.API_HASH
 
 # kangers = os.environ.get("KANGERS_ID") 
 # For using the above var, first add "KANGERS_ID" var in app.json (https://github.com/MadBoy-X/SuperBot-Assistant/blob/main/app.json) !!
