@@ -1,37 +1,39 @@
 {
-    "name": "SuperBot Assistant",
-    "description": "Simple basic code for a telegram bot in Telethon.",
-    "logo": "",
+  "name": "SuperBot Assistant",
+  "description": "Simple basic code for a telegram bot in Telethon.",
+  "logo": "https://telegra.ph/file/c3ed783d043b8acf6ad15.png",
     "keywords": [
-        "telegram",
-        "telethon",
-        "telegram-bot",
-        "Assistant"
-        "SuperBot"
-    ],
-    "repository": "https://github.com/MadBoy-X/SuperBot-Assistant",
-    "website": "https://github.com/MadBoy-X",
-    "success_url": "https://github.com/MadBoy-X/SuperBot-Assistant",
-    "env": {
-        "API_HASH": {
-            "description": "You API HASH from my.telegram.org",
-            "value": ""
-        },
-        "API_ID": {
-            "description": "You API ID from my.telegram.org",
-            "value": ""
-        },
-        "TOKEN": {
-            "description": "Bot token, get it from @BotFather.",
-            "value": ""
-        }
+    "telegram",
+    "telethon",
+    "telegram-bot",
+    "Assistant",
+    "SuperBot"
+  ],
+  "repository": "https://github.com/MadBoy-X/SuperBot-Assistant/",
+  "website": "https://github.com/MadBoy-X/",
+  "success_url": "https://github.com/MadBoy-X/SuperBot-Assistant/",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
     },
-    "buildpacks": [
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        },
-        {
-            "url": "heroku/python"
-        }
-    ]
+    "APP_ID": {
+      "description": "Your API ID from my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your API HASH from my.telegram.org",
+      "value": ""
+    },
+    "TOKEN": {
+      "description": "Bot token, get it from @BotFather.",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url": "heroku/python"
+  }]
 }
