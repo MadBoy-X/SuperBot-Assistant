@@ -1,5 +1,5 @@
-pip
-telethon==1.23.0
-requests
-LEGENDX
 dotenv
+LEGENDX
+pip
+requests
+telethon==1.23.0
