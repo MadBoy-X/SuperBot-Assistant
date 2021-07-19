@@ -2,7 +2,7 @@
 A Powerful and Modified PTB Assistant made for managing SuperBot Groups.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/hUmC1ryUf6d4Csz3gh/giphy.gif">
+  <img src="https://share.synthesia.io/00b9842e-62d8-49f6-b504-c5d35dce3ad9">
 </p>
 
 # ![GitHub Repo Size](https://img.shields.io/github/repo-size/MadBoy-X/SuperBot-Assistant)
