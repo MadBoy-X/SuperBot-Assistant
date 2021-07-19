@@ -4,10 +4,10 @@ import os
 
 owner = os.environ.get("OWNER_ID", 1732236209)
 token = os.environ.get("TOKEN")
-api_id = os.environ.get("API_ID", None)
-api_hash = os.environ.get("API_HASH", None)
+api_id = os.environ.get("API_ID")
+api_hash = os.environ.get("API_HASH")
 
-# kangers = os.environ.get("KANGERS_ID", None) 
+# kangers = os.environ.get("KANGERS_ID") 
 # For using the above var, first add "KANGERS_ID" var in app.json (https://github.com/MadBoy-X/SuperBot-Assistant/blob/main/app.json) !!
 # and then remove the "kangers" line from this code file (https://github.com/MadBoy-X/SuperBot-Assistant/blob/5d48b63f096c8bb14ade5b6a4cdee1cdff09b8e2/assistant.py#L20) !!
 
