@@ -3,23 +3,21 @@ import os
 
 """
 owner = os.environ.get("OWNER_ID", None)
+"""
+
 token = os.environ.get("TOKEN")
 api_id = os.environ.get("API_ID", None)
 api_hash = os.environ.get("API_HASH", None)
-"""
-
-api_id = "1879263"
-api_hash = "95ecb21d294c7f6ffdce81558d27999a"
-token = "1879528628:AAE6oIHHt8lHBLefqcjwaJf3yNcuqtTgT3g"
+kangers = os.environ.get("KANGERS_ID", None)
 bot = TelegramClient ("legendx", api_id, api_hash).start(bot_token=token)
 devs = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
 # bhaago bc kanger aya
-photo = "https://telegra.ph/file/b699e11c61f4ec2d6e53b.mp4"
-abe = "https://telegra.ph/file/0129f473ec349189325d4.png"
+photo = "https://telegra.ph/file/bb0800c12cb520e95fd49.mp4"
+abe = "https://telegra.ph/file/0ea4e0b8f2c903bb431cb.png"
 
 DEVS = [1732236209, 1511373882]
 
-kangers = [1741502445]
+kangers = [1883752632, 1698803654, 1781874715, 1831780815, 1882919838, 1854565071, 1712612576, 1815892895, 1772470872, 1622398047, 1804823302, 1768714246, 1771499536, 1632162430]
 
 from telethon import events, Button, custom
 import asyncio
@@ -40,14 +38,14 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 import re, sys, os
 
 MADBOI = [[Button.url("Oᴡɴᴇʀ", "https://t.me/Warning_MadBoy_is_Back"), Button.url("Dᴇᴠs", "https://t.me/ItS_PRaNAv_Xd")]]
-MADBOI += [[Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/SuperBot_OT"), Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SuperBot_Support")]]
+MADBOI += [[Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/SuperBot_OT"), Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/SuperBot_SupportChat")]]
 MADBOI += [[custom.Button.inline("¿ Rᴜʟᴇs ?", data="rules")]]
 
 mboy= [[custom.Button.inline("¿ Rᴜʟᴇs ?", data="rules")]]
 
 madb = [[custom.Button.inline("«« Bᴀᴄᴋ", data="back")]]
 
-madboy = [[Button.url("Sᴘᴀᴍ", "https://t.me/SuperBot_Spam"), Button.url("Cʜᴀᴛ", "https://t.me/SuperBot_Support")]]
+madboy = [[Button.url("Sᴘᴀᴍ", "https://t.me/SuperBot_Spam"), Button.url("Cʜᴀᴛ", "https://t.me/SuperBot_SupportChat")]]
 
 import logging
 import os
@@ -67,7 +65,7 @@ async def handler(event):
     if mad.id in kangers:
       await bot.send_message(event.chat.id, f"**Oh nooo!!!\nBe alert a kanger __{boy}__ has just joined our chat.**\n**Let me inform @admins**\n\n**Perma Link to his Profile:** [{boy}](tg://user?id={gurl})")
       await bot.send_message("Heya Boss", f"**Sorry to disturb you sir!!\nBut a kanger just joined your chat..!!**\n\n**➥ Name:** {boy}\n**➥ Username:** @{boi}")
-    elif event.chat_id == -1001550081583:
+    elif event.chat_id == -1001342134554:
       await bot.send_file(event.chat_id, photo, caption=f"**Heya __{boy}__!! Welcome to 𝑺𝒖𝒑𝒆𝒓𝑩𝒐𝒕 𝑺𝒖𝒑𝒑𝒐𝒓𝒕..\nMake sure that you read the group rules...**\n\n**Profile link:** [{boy}](tg://user?id={gurl})\n**User ID:** `{gurl}`", buttons=mboy)
     else:
       await bot.send_message(event.chat.id, f"**Heyy!!\nI'm a Modified and Advanced Assistant for SuperBot, Sorry to say that, but I only work in 𝑺𝒖𝒑𝒆𝒓𝑩𝒐𝒕 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑵𝒆𝒕𝒘𝒐𝒓𝒌!.!**", buttons=madboy)
@@ -75,7 +73,7 @@ async def handler(event):
 
 @bot.on(events.NewMessage(pattern="/start|/START|#start"))
 async def assistant (event):
-  if event.chat_id == -1001550081583:
+  if event.chat_id == -1001342134554:
     await bot.send_file(event.chat_id,abe, caption=f"**Heya!! I'm a Modified and Advanced Assistant for SuperBot.\nAn Advanced Group Manager for 𝑺𝒖𝒑𝒆𝒓𝑩𝒐𝒕 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑵𝒆𝒕𝒘𝒐𝒓𝒌!.!**", buttons=MADBOI)
   else:
     await bot.send_message(event.chat.id, f"**Heyy!!\nI'm a Modified and Advanced Assistant for SuperBot, Sorry to say that, but I only work in 𝑺𝒖𝒑𝒆𝒓𝑩𝒐𝒕 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑵𝒆𝒕𝒘𝒐𝒓𝒌!.!**", buttons=madboy)
@@ -98,7 +96,7 @@ async def back(event):
   
 @bot.on(events.NewMessage(pattern="/rules|/RULES|#rules"))
 async def assistant (event):
-  if event.chat_id == -1001550081583:
+  if event.chat_id == -1001342134554:
      await bot.send_message(event.chat.id, "**... Click the Button below for getting the rules of the Group ...**",buttons=mboy)
   else:
      await bot.send_message(event.chat.id, f"**Heyy!!\nI'm a Modified and Advanced Assistant for SuperBot, Sorry to say that, but I only work in 𝑺𝒖𝒑𝒆𝒓𝑩𝒐𝒕 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 𝑵𝒆𝒕𝒘𝒐𝒓𝒌!.!**", buttons=madboy)
