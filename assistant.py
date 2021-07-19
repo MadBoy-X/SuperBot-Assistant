@@ -1,18 +1,17 @@
 from telethon import TelegramClient
 import os
 
-from sample_config import Config
-
 owner = os.environ.get("OWNER_ID", 1732236209)
-token = Config.TOKEN
-api_id = Config.API_ID
-api_hash = Config.API_HASH
+
+TOKEN: ${{ secrets.TOKEN }}
+API_ID: ${{ secrets.API_ID }}
+API_HASH: ${{ secrets.API_HASH }}
 
 # kangers = os.environ.get("KANGERS_ID") 
 # For using the above var, first add "KANGERS_ID" var in app.json (https://github.com/MadBoy-X/SuperBot-Assistant/blob/main/app.json) !!
 # and then remove the "kangers" line from this code file (https://github.com/MadBoy-X/SuperBot-Assistant/blob/5d48b63f096c8bb14ade5b6a4cdee1cdff09b8e2/assistant.py#L20) !!
 
-bot = TelegramClient ("legendx", api_id, api_hash).start(bot_token=token)
+bot = TelegramClient ("madboyx", API_ID, API_HASH).start(bot_token=TOKEN)
 devs = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
 # bhaago bc kanger aya
 photo = "https://telegra.ph/file/abe0d33ad14e6b36eb285.mp4"
