@@ -2,3 +2,4 @@ pip
 telethon==1.23.0
 requests
 LEGENDX
+dotenv==10.0.0
