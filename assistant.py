@@ -14,8 +14,8 @@ api_hash = os.environ.get("API_HASH", None)
 bot = TelegramClient ("legendx", api_id, api_hash).start(bot_token=token)
 devs = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
 # bhaago bc kanger aya
-photo = "https://telegra.ph/file/bb0800c12cb520e95fd49.mp4"
-abe = "https://telegra.ph/file/0ea4e0b8f2c903bb431cb.png"
+photo = "https://telegra.ph/file/abe0d33ad14e6b36eb285.mp4"
+abe = "https://telegra.ph/file/318b16f4ca867c290281a.png"
 
 DEVS = [1732236209, 1511373882]
 
