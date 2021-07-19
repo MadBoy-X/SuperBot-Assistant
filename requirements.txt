@@ -1,4 +1,4 @@
-dotenv
+dotenv>=8.0.0
 LEGENDX
 pip
 requests
