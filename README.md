@@ -1,12 +1,8 @@
-
-
-https://user-images.githubusercontent.com/73926361/126137481-4579d522-f480-48a0-b322-a23d26421963.mp4
-
 # SuperBot-Assistant
 A Powerful and Modified PTB Assistant made for managing SuperBot Groups.
 
 <p align="center">
-  <img src="https://share.synthesia.io/00b9842e-62d8-49f6-b504-c5d35dce3ad9">
+https://user-images.githubusercontent.com/73926361/126137481-4579d522-f480-48a0-b322-a23d26421963.mp4
 </p>
 
 # ![GitHub Repo Size](https://img.shields.io/github/repo-size/MadBoy-X/SuperBot-Assistant)
