@@ -2,7 +2,7 @@
 A Powerful and Modified PTB Assistant made for managing SuperBot Groups.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/hUmC1ryUf6d4Csz3gh/giphy.gif/">
+  <img src="https://media.giphy.com/media/S7jznj1TlqH9otxZux/giphy.gif">
 </p>
 
 # Dᴇᴘʟᴏʏ:-
