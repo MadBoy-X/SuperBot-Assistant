@@ -2,7 +2,7 @@ import os
 
 
 class Config(object):
-    TOKEN = "TG_BOT_TOKEN"
+    TOKEN = "TOKEN"
 
     API_ID = 123456
 
